@@ -1490,7 +1490,7 @@ while True:
                                                             random_id=randint(1, 1000000000000000000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
-                                                    elif event.text == "Сменить специальность":
+                                                    elif event.text == "Сменить группу":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
@@ -1583,7 +1583,7 @@ while True:
                                                             random_id=randint(1, 1000000000000000000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
-                                                    elif event.text == "Сменить специальность":
+                                                    elif event.text == "Сменить группу":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
@@ -1678,7 +1678,7 @@ while True:
                                                             random_id=randint(1, 1000000000000000000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
-                                                    elif event.text == "Сменить специальность":
+                                                    elif event.text == "Сменить группу":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
@@ -1771,7 +1771,7 @@ while True:
                                                             random_id=randint(1, 1000000000000000000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
-                                                    elif event.text == "Сменить специальность":
+                                                    elif event.text == "Сменить группу":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
