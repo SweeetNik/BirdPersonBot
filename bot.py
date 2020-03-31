@@ -1545,12 +1545,12 @@ while True:
                                                                         )
                                                                         break
                                                                     else:
-                                        								vk.messages.send(
-                                        								    user_id=event.user_id,
-                                        								    message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                        								    random_id=randint(1, 1000000000000000000000000000000000),
-                                        								    keyboard=keyboard.get_keyboard()
-                                        								)
+                                                                        vk.messages.send(
+                                                                            user_id=event.user_id,
+                                                                            message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
+                                                                            random_id=randint(1, 1000000000000000000000000000000000),
+                                                                            keyboard=keyboard.get_keyboard()
+                                                                        )
                                                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
@@ -1637,12 +1637,12 @@ while True:
                                                                         )
                                                                         break
                                                                     else:
-                                        								vk.messages.send(
-                                        								    user_id=event.user_id,
-                                        								    message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                        								    random_id=randint(1, 1000000000000000000000000000000000),
-                                        								    keyboard=keyboard.get_keyboard()
-                                        								)
+                                                                        vk.messages.send(
+                                                                            user_id=event.user_id,
+                                                                            message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
+                                                                            random_id=randint(1, 1000000000000000000000000000000000),
+                                                                            keyboard=keyboard.get_keyboard()
+                                                                        )
                                                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
@@ -1730,12 +1730,12 @@ while True:
                                                                         )
                                                                         break
                                                                     else:
-                                        								vk.messages.send(
-                                        								    user_id=event.user_id,
-                                        								    message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                        								    random_id=randint(1, 1000000000000000000000000000000000),
-                                        								    keyboard=keyboard.get_keyboard()
-                                        								)
+                                                                        vk.messages.send(
+                                                                            user_id=event.user_id,
+                                                                            message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
+                                                                            random_id=randint(1, 1000000000000000000000000000000000),
+                                                                            keyboard=keyboard.get_keyboard()
+                                                                        )
                                                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
@@ -1822,12 +1822,12 @@ while True:
                                                                         )
                                                                         break
                                                                     else:
-                                        								vk.messages.send(
-                                        								    user_id=event.user_id,
-                                        								    message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                        								    random_id=randint(1, 1000000000000000000000000000000000),
-                                        								    keyboard=keyboard.get_keyboard()
-                                        								)
+                                                                        vk.messages.send(
+                                                                            user_id=event.user_id,
+                                                                            message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
+                                                                            random_id=randint(1, 1000000000000000000000000000000000),
+                                                                            keyboard=keyboard.get_keyboard()
+                                                                        )
                                                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
