@@ -6,7 +6,6 @@ from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 import sqlite3
 from datetime import datetime
 import time
-from time import time_ns
 
 vk_session = vk_api.VkApi(token='0ffe95b05c0b60e96873602353fd5507a7c4060760f5b074458f116ca1bc60633240a56c70c4e90039243')
 longpoll = VkLongPoll(vk_session)
@@ -169,7 +168,7 @@ def timetables():
         vk.messages.send(
             user_id=event.user_id,
             message="Сегодня ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -179,7 +178,7 @@ def timetables():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -190,7 +189,7 @@ def timetables():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -199,7 +198,7 @@ def timetables():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -210,7 +209,7 @@ def timetables():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -219,7 +218,7 @@ def timetables():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -229,7 +228,7 @@ def timetables():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -239,7 +238,7 @@ def timetables():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -249,7 +248,7 @@ def timetables():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -262,7 +261,7 @@ def timetables_t():
         vk.messages.send(
             user_id=event.user_id,
             message="Завтра ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -272,7 +271,7 @@ def timetables_t():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -283,7 +282,7 @@ def timetables_t():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -292,7 +291,7 @@ def timetables_t():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -303,7 +302,7 @@ def timetables_t():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -312,7 +311,7 @@ def timetables_t():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -322,7 +321,7 @@ def timetables_t():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -332,7 +331,7 @@ def timetables_t():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -342,7 +341,7 @@ def timetables_t():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -355,7 +354,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                 if event.text == "Литература":
@@ -364,7 +363,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(liter),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -374,7 +373,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(infor),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -384,7 +383,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(matem),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -394,7 +393,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(angel),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -404,7 +403,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obsh),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -414,7 +413,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(ecol),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -424,7 +423,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizra),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -434,7 +433,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obz),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -444,7 +443,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizika),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -454,7 +453,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(russk),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -464,7 +463,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(hell),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -472,7 +471,7 @@ def teachers():
                     vk.messages.send(
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -486,7 +485,7 @@ def timetables_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message="Сегодня ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -496,7 +495,7 @@ def timetables_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -507,7 +506,7 @@ def timetables_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -516,7 +515,7 @@ def timetables_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -527,7 +526,7 @@ def timetables_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -536,7 +535,7 @@ def timetables_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -546,7 +545,7 @@ def timetables_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -556,7 +555,7 @@ def timetables_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -566,7 +565,7 @@ def timetables_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -579,7 +578,7 @@ def timetables_t_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message="Завтра ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -589,7 +588,7 @@ def timetables_t_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -600,7 +599,7 @@ def timetables_t_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -609,7 +608,7 @@ def timetables_t_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -620,7 +619,7 @@ def timetables_t_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -629,7 +628,7 @@ def timetables_t_pks_1():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -639,7 +638,7 @@ def timetables_t_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -649,7 +648,7 @@ def timetables_t_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -659,7 +658,7 @@ def timetables_t_pks_1():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -672,7 +671,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                 if event.text == "Литература":
@@ -681,7 +680,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(liter),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -691,7 +690,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(infor),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -701,7 +700,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(matem),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -711,7 +710,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(angel),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -721,7 +720,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obsh),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -731,7 +730,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(ecol),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -741,7 +740,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizra),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -751,7 +750,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obz),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -761,7 +760,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizika),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -771,7 +770,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(russk),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -781,7 +780,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(hell),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -789,7 +788,7 @@ def teachers_pks_1():
                     vk.messages.send(
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -802,7 +801,7 @@ def timetables_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message="Сегодня ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -812,7 +811,7 @@ def timetables_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -822,7 +821,7 @@ def timetables_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(tuesday_b)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -833,7 +832,7 @@ def timetables_pks_3():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -842,7 +841,7 @@ def timetables_pks_3():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -852,7 +851,7 @@ def timetables_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -862,7 +861,7 @@ def timetables_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -872,7 +871,7 @@ def timetables_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -885,7 +884,7 @@ def timetables_t_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message="Завтра ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -895,7 +894,7 @@ def timetables_t_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -905,7 +904,7 @@ def timetables_t_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(tuesday_b)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
     if a == 2:
@@ -915,7 +914,7 @@ def timetables_t_pks_3():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -924,7 +923,7 @@ def timetables_t_pks_3():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -934,7 +933,7 @@ def timetables_t_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -944,7 +943,7 @@ def timetables_t_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -954,7 +953,7 @@ def timetables_t_pks_3():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -967,7 +966,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                 if event.text == "Литература":
@@ -976,7 +975,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(liter),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -986,7 +985,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(infor),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -996,7 +995,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(matem),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1006,7 +1005,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(angel),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1016,7 +1015,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obsh),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1026,7 +1025,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(ecol),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1036,7 +1035,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizra),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1046,7 +1045,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obz),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1056,7 +1055,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizika),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1066,7 +1065,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(russk),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1076,7 +1075,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(hell),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1084,7 +1083,7 @@ def teachers_pks_3():
                     vk.messages.send(
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1097,7 +1096,7 @@ def timetables_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message="Сегодня ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1107,7 +1106,7 @@ def timetables_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1118,7 +1117,7 @@ def timetables_pks_4():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 1:
@@ -1127,7 +1126,7 @@ def timetables_pks_4():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
     if a == 3:
@@ -1136,7 +1135,7 @@ def timetables_pks_4():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(wednesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -1146,7 +1145,7 @@ def timetables_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1156,7 +1155,7 @@ def timetables_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1166,7 +1165,7 @@ def timetables_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1179,7 +1178,7 @@ def timetables_t_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message="Завтра ВОСКРЕСЕНЬЕ, бро",
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1189,7 +1188,7 @@ def timetables_t_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(monday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1200,7 +1199,7 @@ def timetables_t_pks_4():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_b)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
         if week == 0:
@@ -1209,7 +1208,7 @@ def timetables_t_pks_4():
             vk.messages.send(
                 user_id=event.user_id,
                 message=('\n'.join(tuesday_y)),
-                random_id=time_ns(),
+                random_id=random(1, 1000000000000000000),
                 keyboard=keyboard.get_keyboard()
             )
 
@@ -1219,7 +1218,7 @@ def timetables_t_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(wednesday_b)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1229,7 +1228,7 @@ def timetables_t_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(thursday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1239,7 +1238,7 @@ def timetables_t_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(friday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1249,7 +1248,7 @@ def timetables_t_pks_4():
         vk.messages.send(
             user_id=event.user_id,
             message=('\n'.join(saturday)),
-            random_id=time_ns(),
+            random_id=random(1, 1000000000000000000),
             keyboard=keyboard.get_keyboard()
         )
 
@@ -1262,7 +1261,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                 if event.text == "Литература":
@@ -1271,7 +1270,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(liter),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1281,7 +1280,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(infor),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1291,7 +1290,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(matem),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1301,7 +1300,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(angel),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1311,7 +1310,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obsh),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1321,7 +1320,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(ecol),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1331,7 +1330,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizra),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1341,7 +1340,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(obz),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1351,7 +1350,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(fizika),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1361,7 +1360,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(russk),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1371,7 +1370,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message=''.join(hell),
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1379,7 +1378,7 @@ def teachers_pks_4():
                     vk.messages.send(
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                        random_id=time_ns(),
+                        random_id=random(1, 1000000000000000000),
                         keyboard=keyboard.get_keyboard()
                     )
                     break
@@ -1459,14 +1458,14 @@ while True:
                         vk.messages.send(
                             user_id=event.user_id,
                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                            random_id=time_ns(),
+                            random_id=random(1, 1000000000000000000),
                             keyboard=keyboard.get_keyboard()
                         )
                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
                         vk.messages.send(
                             user_id=event.user_id,
                             message="Привет, Я - Птичья Личность, шпион, закрепленный за ИНСПО.\nЧтобы начать пользоваться мной, выбери свою специальность. Также, советую подписаться на рассылку, чтобы не пропускать никаких новостей\nhttps://vk.com/app5898182_-190666803#s=721649",
-                            random_id=time_ns(),
+                            random_id=random(1, 1000000000000000000),
                             keyboard=keyboards.get_keyboard()
                         )
                         for event in longpoll.listen():
@@ -1476,7 +1475,7 @@ while True:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message="Привет, студент из ПКС-1",
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboard.get_keyboard()
                                         )
                                         for event in longpoll.listen():
@@ -1486,14 +1485,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Сменить специальность":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1505,14 +1504,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Директор ИНСПО - Хлопова Татьяна Павловна (305 кабинет)\nЗаместитель директора – Рыбалко Елена Ивановна.\nНомер телефона : +7-861-267-22-80\nEmail: inspo@inspo.kubsu.ru\nИнформация взята с сайта www.kubsu.ru\nПолное расписание для:\n1 смена: https://sun9-55.userapi.com/c857120/v857120722/138a10/KjTPJlE0hao.jpg\n2 смена: https://sun9-15.userapi.com/c858124/v858124722/1bfbe2/Vr95zlLdk-Q.jpg",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Узнать ФИО препода":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Внимание! Имена являются вымышленными.\nВсе совпадения с реальными именами сотрудников учебного заведения или иными физическими лицами случайны!\nАвтор данного паблика не несёт ответственности за любые последствия от тех или иных совпадений.",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboardteach.get_keyboard()
                                                         )
                                                         teachers_pks_1()
@@ -1520,7 +1519,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Программисту заплатите\nЧеканой монетой...\nP.S. на Detroit: Become Human",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboarddon.get_keyboard()
                                                         )
                                                         for event in longpoll.listen():
@@ -1530,7 +1529,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                     elif event.text == "Назад":
@@ -1546,7 +1545,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                         break
@@ -1554,7 +1553,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Привет, Я - Птичья Личность, шпион, закрепленный за ИНСПО.\nЧтобы начать пользоваться мной, выбери свою специальность. Также, советую подписаться на рассылку, чтобы не пропускать никаких новостей\nhttps://vk.com/app5898182_-190666803#s=721649",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1562,7 +1561,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                         break
@@ -1570,7 +1569,7 @@ while True:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message="Привет, студент из ПКС-2",
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboard.get_keyboard()
                                         )
                                         for event in longpoll.listen():
@@ -1580,14 +1579,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Сменить специальность":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1599,14 +1598,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Директор ИНСПО - Хлопова Татьяна Павловна (305 кабинет)\nЗаместитель директора – Рыбалко Елена Ивановна.\nНомер телефона : +7-861-267-22-80\nEmail: inspo@inspo.kubsu.ru\nИнформация взята с сайта www.kubsu.ru\nПолное расписание для:\n1 смена: https://sun9-55.userapi.com/c857120/v857120722/138a10/KjTPJlE0hao.jpg\n2 смена: https://sun9-15.userapi.com/c858124/v858124722/1bfbe2/Vr95zlLdk-Q.jpg",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Узнать ФИО препода":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Внимание! Имена являются вымышленными.\nВсе совпадения с реальными именами сотрудников учебного заведения или иными физическими лицами случайны!\nАвтор данного паблика не несёт ответственности за любые последствия от тех или иных совпадений.",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboardteach.get_keyboard()
                                                         )
                                                         teachers()
@@ -1614,7 +1613,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Программисту заплатите\nЧеканой монетой...\nP.S. на Detroit: Become Human",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboarddon.get_keyboard()
                                                         )
                                                         for event in longpoll.listen():
@@ -1624,7 +1623,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                     if event.text == "Назад":
@@ -1640,7 +1639,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                         break
@@ -1648,7 +1647,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Привет, Я - Птичья Личность, шпион, закрепленный за ИНСПО.\nЧтобы начать пользоваться мной, выбери свою специальность. Также, советую подписаться на рассылку, чтобы не пропускать никаких новостей\nhttps://vk.com/app5898182_-190666803#s=721649",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1656,7 +1655,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                         break
@@ -1664,7 +1663,7 @@ while True:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message="Привет, студент из ПКС-3",
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboard.get_keyboard()
                                         )
                                         for event in longpoll.listen():
@@ -1674,14 +1673,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Сменить специальность":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1693,14 +1692,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Директор ИНСПО - Хлопова Татьяна Павловна (305 кабинет)\nЗаместитель директора – Рыбалко Елена Ивановна.\nНомер телефона : +7-861-267-22-80\nEmail: inspo@inspo.kubsu.ru\nИнформация взята с сайта www.kubsu.ru\nПолное расписание для:\n1 смена: https://sun9-55.userapi.com/c857120/v857120722/138a10/KjTPJlE0hao.jpg\n2 смена: https://sun9-15.userapi.com/c858124/v858124722/1bfbe2/Vr95zlLdk-Q.jpg",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Узнать ФИО препода":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Внимание! Имена являются вымышленными.\nВсе совпадения с реальными именами сотрудников учебного заведения или иными физическими лицами случайны!\nАвтор данного паблика не несёт ответственности за любые последствия от тех или иных совпадений.",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboardteach.get_keyboard()
                                                         )
                                                         teachers_pks_3()
@@ -1708,7 +1707,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Программисту заплатите\nЧеканой монетой...\nP.S. на Detroit: Become Human",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboarddon.get_keyboard()
                                                         )
                                                         for event in longpoll.listen():
@@ -1718,7 +1717,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                     if event.text == "Назад":
@@ -1734,7 +1733,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                         break
@@ -1742,7 +1741,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Привет, Я - Птичья Личность, шпион, закрепленный за ИНСПО.\nЧтобы начать пользоваться мной, выбери свою специальность. Также, советую подписаться на рассылку, чтобы не пропускать никаких новостей\nhttps://vk.com/app5898182_-190666803#s=721649",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1750,7 +1749,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                         break
@@ -1758,7 +1757,7 @@ while True:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message="Привет, студент из ПКС-4",
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboard.get_keyboard()
                                         )
                                         for event in longpoll.listen():
@@ -1768,14 +1767,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Сменить специальность":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Будет по-твоему",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1787,14 +1786,14 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Директор ИНСПО - Хлопова Татьяна Павловна (305 кабинет)\nЗаместитель директора – Рыбалко Елена Ивановна.\nНомер телефона : +7-861-267-22-80\nEmail: inspo@inspo.kubsu.ru\nИнформация взята с сайта www.kubsu.ru\nПолное расписание для:\n1 смена: https://sun9-55.userapi.com/c857120/v857120722/138a10/KjTPJlE0hao.jpg\n2 смена: https://sun9-15.userapi.com/c858124/v858124722/1bfbe2/Vr95zlLdk-Q.jpg",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                     elif event.text == "Узнать ФИО препода":
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Внимание! Имена являются вымышленными.\nВсе совпадения с реальными именами сотрудников учебного заведения или иными физическими лицами случайны!\nАвтор данного паблика не несёт ответственности за любые последствия от тех или иных совпадений.",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboardteach.get_keyboard()
                                                         )
                                                         teachers_pks_4()
@@ -1802,7 +1801,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Программисту заплатите\nЧеканой монетой...\nP.S. на Detroit: Become Human",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboarddon.get_keyboard()
                                                         )
                                                         for event in longpoll.listen():
@@ -1812,14 +1811,14 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                     if event.text == "Назад":
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message="Всегда пожалуйста :)",
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                         break
@@ -1827,7 +1826,7 @@ while True:
                                                                         vk.messages.send(
                                                                             user_id=event.user_id,
                                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                                            random_id=time_ns(),
+                                                                            random_id=random(1, 1000000000000000000),
                                                                             keyboard=keyboard.get_keyboard()
                                                                         )
                                                                         break
@@ -1835,7 +1834,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Привет, Я - Птичья Личность, шпион, закрепленный за ИНСПО.\nЧтобы начать пользоваться мной, выбери свою специальность. Также, советую подписаться на рассылку, чтобы не пропускать никаких новостей\nhttps://vk.com/app5898182_-190666803#s=721649",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboards.get_keyboard()
                                                         )
                                                         break
@@ -1843,7 +1842,7 @@ while True:
                                                         vk.messages.send(
                                                             user_id=event.user_id,
                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                                            random_id=time_ns(),
+                                                            random_id=random(1, 1000000000000000000),
                                                             keyboard=keyboard.get_keyboard()
                                                         )
                                                         break
@@ -1851,7 +1850,7 @@ while True:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message="Привет, Я - Птичья Личность, шпион, закрепленный за ИНСПО.\nЧтобы начать пользоваться мной, выбери свою специальность. Также, советую подписаться на рассылку, чтобы не пропускать никаких новостей\nhttps://vk.com/app5898182_-190666803#s=721649",
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboards.get_keyboard()
                                         )
                                         break
@@ -1859,14 +1858,14 @@ while True:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message='Извините, ваше сообщение не распознано. Пожалуйста, используйте инструкции от бота или кнопки в меню\nЕсли подозреваете, что я сломался, то просто напишите в чат "Обновить"',
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboard.get_keyboard()
                                         )
                                     else:
                                         vk.messages.send(
                                             user_id=event.user_id,
                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                            random_id=time_ns(),
+                                            random_id=random(1, 1000000000000000000),
                                             keyboard=keyboard.get_keyboard()
                                         )
                                         break
@@ -1874,7 +1873,7 @@ while True:
                             vk.messages.send(
                                 user_id=event.user_id,
                                 message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
-                                random_id=time_ns(),
+                                random_id=random(1, 1000000000000000000),
                                 keyboard=keyboard.get_keyboard()
                             )
                         break
