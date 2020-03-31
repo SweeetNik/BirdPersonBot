@@ -1738,7 +1738,7 @@ while True:
                                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
                                                                             random_id=randint(1,
                                                                                               1000000000000000000000000000000000),
-                                                                            keyboard=keyboarddon.get_keyboard()
+                                                                            keyboard=keyboard.get_keyboard()
                                                                         )
                                                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
                                                         vk.messages.send(
@@ -1831,7 +1831,7 @@ while True:
                                                                             message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
                                                                             random_id=randint(1,
                                                                                               1000000000000000000000000000000000),
-                                                                            keyboard=keyboarddon.get_keyboard()
+                                                                            keyboard=keyboard.get_keyboard()
                                                                         )
                                                                         break
                                                     elif event.text.lower() == "start" or event.text.lower() == "начать" or event.text.lower() == "restart" or event.text.lower() == "update" or event.text.lower() == "обновить":
