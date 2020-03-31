@@ -471,7 +471,7 @@ def teachers():
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
                         random_id=randint(1, 1000000000000000000000000000000000),
-                        keyboard=keyboard.get_keyboard()
+                        keyboard=keyboardteach.get_keyboard()
                     )
                     break
 
@@ -788,7 +788,7 @@ def teachers_pks_1():
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
                         random_id=randint(1, 1000000000000000000000000000000000),
-                        keyboard=keyboard.get_keyboard()
+                        keyboard=keyboardteach.get_keyboard()
                     )
                     break
 
@@ -1084,7 +1084,7 @@ def teachers_pks_3():
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
                         random_id=randint(1, 1000000000000000000000000000000000),
-                        keyboard=keyboard.get_keyboard()
+                        keyboard=keyboardteach.get_keyboard()
                     )
                     break
 
@@ -1380,7 +1380,7 @@ def teachers_pks_4():
                         user_id=event.user_id,
                         message="Моя твоя не понимать...\nЕсли подозреваете, что я сломался, то просто напишите в чат 'Обновить'",
                         random_id=randint(1, 1000000000000000000000000000000000),
-                        keyboard=keyboard.get_keyboard()
+                        keyboard=keyboardteach.get_keyboard()
                     )
                     break
 
@@ -1397,7 +1397,7 @@ keyboard.add_button("Узнать ФИО препода", color=VkKeyboardColor.
 keyboard.add_line()
 keyboard.add_button("Материальная поддержка", color=VkKeyboardColor.PRIMARY)
 keyboard.add_line()
-keyboard.add_button("Сменить специальность", color=VkKeyboardColor.DEFAULT)
+keyboard.add_button("Сменить группу", color=VkKeyboardColor.DEFAULT)
 
 # Keyboard second
 
