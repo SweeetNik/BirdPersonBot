@@ -7,7 +7,7 @@ import sqlite3
 from datetime import datetime
 import time
 
-vk_session = vk_api.VkApi(token='0ffe95b05c0b60e96873602353fd5507a7c4060760f5b074458f116ca1bc60633240a56c70c4e90039243')
+vk_session = vk_api.VkApi(token='fckn token')
 longpoll = VkLongPoll(vk_session)
 vk = vk_session.get_api()
 
