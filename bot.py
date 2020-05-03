@@ -1394,7 +1394,7 @@ def left():
     manl = man_pars[x:y]
     image1 = Image.open("tet.jpg")
     draw = ImageDraw.Draw(image1)
-    font = ImageFont.truetype("abram.ttf", size=39)
+    font = ImageFont.truetype("arial.ttf", size=39)
     draw.text((10, 5), manl, fill=(0, 33, 55), font=font)
     num += 1
     image1.save("img" + str(num) + ".jpg")
@@ -1412,7 +1412,7 @@ def right():
     global x, y, manl, manr, z, g, num
     image1 = Image.open("tetrev.jpg")
     draw = ImageDraw.Draw(image1)
-    font = ImageFont.truetype("abram.ttf", size=39)
+    font = ImageFont.truetype("arial.ttf", size=39)
     draw.text((160, 5), manr, fill=(0, 33, 55), font=font)
     num += 1
     image1.save("img" + str(num) + ".jpg")
